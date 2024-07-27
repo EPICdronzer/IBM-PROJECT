@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="calories.css" />
+  <title>Calories Calculator</title>
+ 
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Girassol:wght@400&display=swap"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      line-height: normal;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title-row">
+        <div class="website-name">Website Name</div>
+      </div>
+      <div class="logo-buttons-row">
+        <div class="logo"></div>
+        <div class="buttons">
+          <button class="button">Button 1</button>
+          <button class="button" id="button2">Button 2</button>
+        </div>
+      </div>
+      <div class="links-row">
+        <div class="other-webpages-links">
+          <a href="bmi.html">BMI Calculator</a>|
+          <a href="calories.html">Calories Calculator</a>|
+          <a href="hydration.html">Hydration Calculator</a>|
+          <a href="idealWeight.html">Ideal Weight Calculator</a>
+        </div>
+      </div>
+    </header>
+    <section class="calculator-section">
+      <div class="calculator-title-box">
+        <div class="calories-calculator-title">CALORIE CALCULATOR</div>
+      </div>
+      <div class="info-text">
+        <p>The Calorie Calculator can be used to estimate the number of calories a person needs to consume each day. This calculator can also provide some simple guidelines for gaining or losing weight.</p>
+      </div>
+      <div class="calories-calculator-box">
+        <div class="form">
+            <div class="calories-form-group">
+                <label for="age">AGE</label>
+                <input type="number" id="age" name="age" />
+                <button onclick="clearForm()" class="clear-button">CLEAR</button>
+            </div>
+            <div class="calories-form-group">
+                <label>GENDER</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="male" checked />
+                    <label for="male">MALE</label>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">FEMALE</label>
+                </div>
+            </div>
+            <div class="calories-form-group">
+                <label for="height">HEIGHT (cm)</label>
+                <input type="number" id="height" name="height" />
+            </div>
+            <div class="calories-form-group">
+                <label for="weight">WEIGHT (kg)</label>
+                <input type="number" id="weight" name="weight" />
+            </div>
+            <div class="calories-form-group">
+                <label for="activity">ACTIVITY</label>
+                <select id="activity" name="activity">
+                    <option value="sedentary">Sedentary</option>
+                    <option value="light">Light Activity</option>
+                    <option value="moderate">Moderate Activity</option>
+                    <option value="active">Active</option>
+                </select>
+            </div>
+            <div class="button-group">
+                <button onclick="calculateCalories()" class="calculate-button">CALCULATE</button>
+            </div>
+        </div>
+        <div id="calories-result"></div>
+    </div>
+
+      <div class="energy-calculator-box">
+        <div class="energy-calculator-title">ENERGY CALCULATOR</div>
+        <div class="form">
+          <div class="energy-form-group">
+            <input type="number" id="kcal" name="kcal" />
+            <label for="kcal">KCAL</label>
+            
+            <input type="number" id="kj" name="kj" readonly />
+            <label for="kj">KJ</label>
+            <button onclick="calculateEnergy()" class="calculate-button">CALCULATE</button>
+          </div>
+          <div class="energy-form-group-button-clear">
+            <button onclick="clearEnergyForm()" class="clear-button">CLEAR</button>
+          </div>
+        </div>
+      </div>
+      <div class="exercise-info">
+        <p>Exercise: 15-30 minutes of elevated heart rate activity.<br>
+        Intense exercise: 45-120 minutes of elevated heart rate activity.<br>
+        Very intense exercise: 2+ hours of elevated heart rate activity.</p>
+      </div>
+    </section>
+    <div class="how-many-calories-box">
+      <h2>How Many Calories Do You Need?</h2>
+      <p>Many people seek to lose weight, and often the easiest way to do this is to consume fewer calories each day. But how many calories does the body actually need in order to be healthy? This largely depends on the amount of physical activity a person performs each day, and regardless of this, is different for all people – there are many different factors involved, not all of which are well-understood or known.</p>
+      <p>Some factors that influence the number of calories a person needs to remain healthy include age, weight, height, sex, levels of physical activity, and overall general health. For example, a physically active 25-year-old male that is 6 feet in height requires considerably higher calorie intake than a 5-foot-tall, sedentary 70-year-old woman. Though it differs depending on age and activity level, adult males generally require 2,000-3000 calories per day to maintain weight while adult females need around 1,600-2,400 according to the U.S Department of Health.</p>
+      <p>The body does not require many calories to simply survive. However, consuming too few calories results in the body functioning poorly, since it will only use calories for functions essential to survival, and ignore those necessary for general health and well-being. Harvard Health Publications suggests women get at least 1,200 calories and men get at least 1,500 calories a day unless supervised by doctors. As such, it is highly recommended that a person attempting to lose weight monitors their body's caloric necessities and adjusts them as necessary to maintain its nutritional needs.</p>
+    </div>
+    <div class="grey-bar">
+      <div class="pink-bar"></div>
+    </div>
+    <footer>
+      <div class="social-media-icons">
+        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+          <img src="https://cdn.icon-icons.com/icons2/2412/PNG/512/instagram_icon_146245.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+          <img src="https://cdn.icon-icons.com/icons2/555/PNG/512/facebook_icon-icons.com_53612.png" alt="Facebook" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+          <img src="https://cdn.icon-icons.com/icons2/805/PNG/512/linkedin_icon-icons.com_65929.png" alt="Instagram" />
+        </a>
+      </div>
+      <div class="footer-text">Copyright 2024</div>
+    </footer>
+    
+  </div>
+  <script src="calories.js"></script>
+</body>
+</html>
