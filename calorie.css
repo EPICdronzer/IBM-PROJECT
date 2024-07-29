@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d9d9d9;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.calculator-title-box {
+  width: 25%;
+  margin-top:20px;
+  margin-left: 55px;
+  background: linear-gradient(to bottom, #7473c6, #e9d8fb);;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  color:white;
+  font-weight: bolder;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+button{
+  font-family:Arial, Helvetica, sans-serif;
+}
+.info-text {
+  width: 60%;
+  text-align: center;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+.calculator-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.calories-calculator-title {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calories-calculator-box {
+  width: 50%;
+  background: linear-gradient(to bottom, #7473c6, #e9d8fb);
+  border-radius: 20px;
+  padding: 40px;
+  margin-right:350px;
+  margin-bottom: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline;
+  flex-direction: column;
+  font-weight: lighter;
+  font-size: medium;
+  gap: 10px;
+}
+
+.calories-form-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.calories-form-group label {
+  width: 20%;
+  margin-right: 5px;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.calories-form-group input,
+.calories-form-group select {
+  background-color: white;
+  margin-left: 10px;
+  width: 100%;
+  border: none;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2px;
+  margin-left: 10%;
+}
+/*To remove scroller from input box*/
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+input, select {
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size:medium;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calculate-button {
+  width: 20%; 
+  margin-left: 13%; 
+  background-color:white;
+  color: #7473c6;
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size:small;
+  
+}
+#calculate-energy {
+  width: 30%; 
+  margin-left: 230px; 
+  background-color:white;
+  color: #7473c6;
+  border: 2px solid #7473c6;
+  border-radius: 5px; 
+  font-weight: bold;
+  font-size:small;
+  margin-top: -10px;
+}
+
+#age {
+  width: 20%;
+}
+
+#height, #weight {
+  width: 30%;
+}
+
+#activity {
+  width: 45%;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.calories-form-group button {
+  display: inline;
+  width: auto;
+  padding: 10px 20px;
+}
+
+.clear-button {
+  margin-left: auto;
+  border: none;
+  border-radius: 5px; 
+  background-color: white;
+  color: #7473c6;
+  padding: 10px;
+  font-weight:bold;
+}
+
+.energy-calculator-title {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: left;
+}
+
+.energy-calculator-box {
+  width: 25%;
+  height: 180px;
+  margin-left: 760px;
+  background-color:white;
+  color: #7473c6;
+  border-radius: 10px;
+  padding: 10px 5px; 
+  margin-top: -215px;
+  margin-bottom: 100px;
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  gap: 10px;
+}
+.energy-form-group {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+}
+
+.energy-form-group label {
+  margin-left: 5px;
+  margin-right: 20px;
+  font-size: large;
+}
+
+.energy-form-group input {
+  width: 40%;
+  margin: 5px;
+  border: 1px solid #7473c6;
+  background-color:wgite;
+  font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.energy-form-group button {
+  margin-left:25px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25%;
+}
+
+.energy-form-group-button-clear {
+  margin-left: 265px;
+  border: 2px solid #7473c6;
+  border-radius: 5px; 
+  background-color: white;
+  color: #7473c6;
+  width: 20%;
+  font-weight:bold;
+  margin-top: -140px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #e0d9d9;
+}
+
+#calories-result, #energy-result {
+  margin-top: 10px;
+  text-align: center;
+  font-size: large;
+}
+
+.exercise-info {
+  width: 25%;
+  background: linear-gradient(to bottom, #7473c6, #e9d8fb);
+  border: none;
+  border-radius: 10px;
+  margin-left:760px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: -475px;
+  margin-bottom: 160px;
+  border:2px solid #000;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.how-many-calories-box {
+  width: 90%;
+  /* background: linear-gradient(to bottom, #7473c6, #e9d8fb); */
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 60px;
+  margin-left: 80px;
+  font-family:Arial, Helvetica, sans-serif;
+}
