@@ -30,7 +30,7 @@ body {
   margin-left: 55px;
   background: linear-gradient(to bottom, #7473c6, #e9d8fb);;
   border: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 10px;
   color:white;
   font-weight: bolder;
@@ -142,14 +142,14 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .calculate-button {
   width: 20%; 
-  margin-left: 13%; 
+  margin-left: 14%; 
   background-color:white;
   color: #7473c6;
   border: none;
   border-radius: 5px; 
   padding: 10px 5px;
   font-weight: bold;
-  font-size:small;
+  font-size:medium;
   
 }
 #calculate-energy {
